@@ -12,7 +12,7 @@ for (var i = 1; i <= 100; i++) {
 
   if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
-    document.getElementById('multipli').innerHTML += "<li>" + 'Fizzbuzz' + "</li>";
+    document.getElementById('multipli').innerHTML += "<li>" + 'FizzBuzz' + "</li>";
   }
 
   else if (i % 3 == 0) {
