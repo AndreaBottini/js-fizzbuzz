@@ -9,14 +9,25 @@
 // che di 5 stampi FizzBuzz.
 
 for (var i = 1; i <= 100; i++) {
-  console.log(i);
 
-  if (i % 3 == 0) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log('FizzBuzz');
+    document.getElementById('multipli').innerHTML += "<li>" + 'Fizzbuzz' + "</li>";
+  }
+
+  else if (i % 3 == 0) {
     console.log('Fizz');
+    document.getElementById('multipli').innerHTML += "<li>" + 'Fizz' + "</li>";
   }
 
   else if (i % 5 == 0) {
     console.log('Buzz');
+    document.getElementById('multipli').innerHTML += "<li>" + 'Buzz' + "</li>";
+  }
+
+  else {
+    console.log(i);
+    document.getElementById('multipli').innerHTML += "<li>" + i + "</li>";
   }
 
 }
